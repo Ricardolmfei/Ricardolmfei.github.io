@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: 枫雨不改`Blog
+subtitle: '欲买桂花同载酒,终不似,少年游'
+description: '一只微亖大学牲的博客'
+keywords: '枫雨不改,TorrentTamer,博客,欲买桂花同载酒,终不似,少年游'
+author: 枫雨不改
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://example.com
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -104,3 +104,13 @@ deploy:
   type: git
   repo: git@github.com:Ricardolmfei/Ricardolmfei.github.io.git
   branch: main
+
+# abbrlink config
+abbrlink:
+  alg: crc32      # Algorithm used to calc abbrlink. Support crc16(default) and crc32
+  rep: hex        # Representation of abbrlink in URLs. Support dec(default) and hex
+
+search:
+  path: search.xml
+  field: all
+  content: true
